@@ -25,8 +25,8 @@ if (today_month, today_day) in birthdays_dict:
     random_index = random.randint(0, 2)
     letter = list_letters[random_index]
     final_letter = letter.replace("[NAME]", birthday_person["name"])
-    my_email = "babatundeibukun981@gmail.com"
-    password = "Barbie4sure"
+    my_email = "inputyourmail@gmail.com"
+    password = "inputyourpassword"
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
         connection.login(user=my_email, password=password)
