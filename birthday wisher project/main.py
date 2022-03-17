@@ -27,6 +27,7 @@ if (today_month, today_day) in birthdays_dict:
     final_letter = letter.replace("[NAME]", birthday_person["name"])
     my_email = "inputyourmail@gmail.com"
     password = "inputyourpassword"
+    #for this to work , make sure your gmail setting is set to off secure connection
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
         connection.login(user=my_email, password=password)
